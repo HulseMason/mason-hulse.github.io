@@ -3,49 +3,45 @@
 <title>W3Schools Examples</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    body {
-      margin: 0;
-  }
-  
-  .icon-bar {
-    width: 100%;
-    background-color: rgb(100, 70, 200);
-    overflow: auto;
-  }
-  
-  .icon-bar a {
-    float: right;
-    width: 30%;
-    text-align: center;
-    padding: 10px 0;
-    color: #FFFFFF;
-    font-size: 30px;
-  }
-  
-  .icon-bar a:hover {
-    background-color: #0000A0;
-  }
-  
-  .active {
-    background-color: #C0C0C0;
-  }
-  
-  </style>
-  
+   .arrow {
+  border: #FFA500;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+ 
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
   <body>
     
-    <h1> Icon Bar Example</h1>
+    <h1>Examples of CSS Arrows</h1>
     <h4>
-        Here is an example of an Icon Bar <a href="https://www.w3schools.com/howto/howto_css_icon_bar.asp"> W3Schools </a>.
+        Here is an example of CSS Arrows <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_arrows"> W3Schools </a>.
     </h4>
+    
+<p>Right arrow: <i class="arrow right"></i></p>
+<p>Left arrow: <i class="arrow left"></i></p>
+<p>Up arrow: <i class="arrow up"></i></p>
+<p>Down arrow: <i class="arrow down"></i></p>
 
-    <div class="icon-bar">
-        <a class="active" href="#"><i class="fa fa-home"></i></a>
-        <a href="#"><i class="fa fa-search"></i></a>
-        <a href="#"><i class="fa fa-envelope"></i></a>
-        <a href="#"><i class="fa fa-globe"></i></a>
-        <a href="#"><i class="fa fa-trash"></i></a>
-    </div>
+   
 
 </body>
 
